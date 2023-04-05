@@ -8,7 +8,7 @@ const get = (url, success) => {
 	httpRequest.send();
 };
 function tempToF(kelvin) {
-	return ((kelvin - 273.15) * 1.8 + 32).toFixed(0);
+	return (kelvin - 273.15).toFixed(0);
 }
 
 function successHandler(data) {
@@ -37,7 +37,7 @@ function successHandler(data) {
 document.addEventListener("DOMContentLoaded", function () {
 	const apiKey = "db173f40ac169596678d02c3bb8882b2"; // ADD YOUR API KEY BETWEEN THE QUOTES
 	const url =
-		"https://api.openweathermap.org/data/2.5/weather?q=los+angeles&APPID=" +
+		"https://api.openweathermap.org/data/2.5/weather?q=hargeisa&APPID=" +
 		apiKey;
 	// add get() function call here
 	get(url, successHandler);
